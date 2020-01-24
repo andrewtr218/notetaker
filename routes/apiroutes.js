@@ -7,10 +7,13 @@ router.get("/api/notes", (req, res) => {
 });
 
 router.post("/api/notes", (req, res) => {
-    console.log('Route Hit');
+    // console.log('Route Hit');
     // console.log(req.body)
     db.push(req.body);
     console.log(db);
 });
+// router.delete("/api/notes", (req, res) => {
+//     // console.log(req);
+// });
 
 module.exports = router;
